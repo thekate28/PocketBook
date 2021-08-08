@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'SergoeWP';
+    src: url("SegoeWPBold.woff") format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'SergoeWP';
+    src: url("SegoeWPRegular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

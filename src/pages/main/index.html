@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link href="/common.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/fonts/segoe.css" />
+  <title>PocketBook</title>
+</head>
+
+<body>
+  @@include('header/index.html')
+  <main class="index-main">
+    <h1 class="index-main__title visually-hidden"></h1>
+    <section class="top container">
+      <div class="top__container">
+        <div class="top__wrapper top__wrapper_1">
+          <picture class="top__img">
+            <source srcset="/static/images/bitmap/bitmap@3x.png 3x">
+            <source srcset="/static/images/bitmap/bitmap@2x.png 2x">
+            <img src="/static/images/bitmap/bitmap.png" alt="photo">
+          </picture>
+          <div class="top__description">
+            <h2 class="top__title">PocketBook 740 Color</h2>
+            <p class="top__txt">Первый в мире крупноформатный 7,8-дюймовый ридер с цветным экраном E Ink</p>
+            <div class="top__sub-wrapper">
+              <span class="top__price">21 999 ₽</span>
+              @@include('buy-btn/index.html')
+            </div>
+          </div>
+        </div>
+        <div class="top__wrapper top__wrapper_2">
+          <span class="top__bottom-item top__bottom-item_1">2+1 года гарантии</span>
+          <span class="top__bottom-item top__bottom-item_2">Бесплатная доставка</span>
+          <span class="top__bottom-item top__bottom-item_3">100% гарантия качества</span>
+          <span class="top__bottom-item top__bottom-item_4">Возврат-обмен</span>
+        </div>
+      </div>
+    </section>
+    <section class="section-2">
+      <div class="container">
+        <div class="section-2__container">
+          <div class="section-2__wrapper section-2__wrapper_1">
+            <h2 class="section-2__title">Цветной ридер. Максимально удобный.</h2>
+            <p class="section-2__txt">Благодаря большому цветному 7,8-дюймовому экрану PocketBook 740 Color отлично
+              подходит для учебников, комиксов, журналов, бизнес-литературы с графиками и диаграммами, детских книг,
+              сайтов. Да, все это можно читать и изучать даже на стандартных 6-дюймовых ридерах.</p>
+          </div>
+          <div class="section-2__wrapper section-2__wrapper_2">
+            <div class="section-2__sub-wrapper section-2__sub-wrapper_1">
+              <span class="section-2__sub-txt">Экран E Ink – полная безопасность для зрения</span>
+            </div>
+            <div class="section-2__sub-wrapper section-2__sub-wrapper_2">
+              <picture class="section-2__img section-2__img_before">
+                <source srcset="/static/images/section-2/before/3x.png 3x">
+                <source srcset="/static/images/section-2/before/2x.png 2x">
+                <img src="/static/images/section-2/before/1x.png" alt="photo">
+              </picture>
+              <picture class="section-2__img section-2__img_after">
+                <source srcset="/static/images/section-2/after/3x.png 3x">
+                <source srcset="/static/images/section-2/after/2x.png 2x">
+                <img src="/static/images/section-2/after/1x.png" alt="photo">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-3">
+      <p class="section-3__txt container ">Все ридеры PocketBook оснащены экранами E Ink и совершенно безвредны для
+        глаз.
+        Такие экраны не бликуют и не мерцают, они ощущаются глазами как самая обычная бумага – и не оказывают на зрение
+        никакого отрицательного влияния. Это важнейшее отличие ридеров от смартфонов и планшетов, читать с которых
+        крайне нежелательно и даже опасно для глаз</p>
+      <h2 class="section-3__title container">Модельный ряд PocketBook</h2>
+      <div class="slider-container">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              @@include('slide/index.html')
+            </div>
+            <div class="swiper-slide">
+              @@include('slide/index.html')
+            </div>
+            <div class="swiper-slide">
+              @@include('slide/index.html')
+            </div>
+            <div class="swiper-slide">
+              @@include('slide/index.html')
+            </div>
+            <div class="swiper-slide">
+              @@include('slide/index.html')
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+  <section class="section-4">
+    <p class="section-4__txt  container">Ридеры PocketBook способны открыть практически любую книгу или документ – от
+      таблицы в формате DOC до финансового отчета в PDF объемом в полгигабайта. Комиксы в CBR и CBZ, сканы в DJVU, книги
+      в FB2 – покетбукам под силу всё! Вам совершенно точно не придется искать книгу в каком-то конкретном формате,
+      потому что «ридер открывает только его». А еще большинство покетбуков позволяет покупать книги в фирменном
+      магазине books.pocketbook.ru. Ассортимент магазина – миллион текстовых и аудиокниг на массе языков, включая
+      русский!</p>
+    <h2 class="section-4__title container">Модельный ряд PocketBook</h2>
+    <div class="swiper-container-second">
+      <div class="swiper-wrapper swiper-wrapper-second">
+        <div class="swiper-slide">
+          @@include('slide-second/index.html', {
+          'img3x' : '/static/images/section-3/3x.png',
+          'img2x' : '/static/images/section-3/2x.png',
+          'img1x' : '/static/images/section-3/1x.png',
+          'title' : 'PocketBook X',
+          'content-1' : '10.3" E Ink®Carta™ Mobius 1872×1404',
+          'content-2' : '1024 МБ',
+          'content-3' : 'Подсветка, с регулировкой цветовой температуры',
+          'content-4' : 'Емкостный мультисенсорный экран',
+          'content-5' : 'Li-Ion Polymer, 3,7 В, 2000 мАч, до 15000 страниц',
+          'content-6' : 'Процессор 1 ГГц х 2 (двухъядерный)',
+          'price' : '29 999 ₽',
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('slide-second/index.html', {
+          'img3x' : '/static/images/section-3/3x.png',
+          'img2x' : '/static/images/section-3/2x.png',
+          'img1x' : '/static/images/section-3/1x.png',
+          'title' : 'PocketBook X',
+          'content-1' : '10.3" E Ink®Carta™ Mobius 1872×1404',
+          'content-2' : '1024 МБ',
+          'content-3' : 'Подсветка, с регулировкой цветовой температуры',
+          'content-4' : 'Емкостный мультисенсорный экран',
+          'content-5' : 'Li-Ion Polymer, 3,7 В, 2000 мАч, до 15000 страниц',
+          'content-6' : ' ',
+          'price' : '29 999 ₽',
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('slide-second/index.html', {
+          'img3x' : '/static/images/section-4/740pro3x.png',
+          'img2x' : '/static/images/section-4/740pro2x.png',
+          'img1x' : '/static/images/section-4/740pro1x.png',
+          'title' : 'PocketBook 740 Pro',
+          'content-1' : 'Дисплей 7.8" E Ink®Carta™ 1872×1404',
+          'content-2' : '1024 МБ',
+          'content-3' : 'Подсветка, с регулировкой цветовой температуры',
+          'content-4' : 'Емкостный мультисенсорный экран',
+          'content-5' : 'Li-Ion Polymer, 3,7 В, 1900 мАч, до 15000 страниц без',
+          'content-6' : 'Процессор 1 ГГц х 2 (двухъядерный)',
+          'price' : '19 999 ₽',
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('slide-second/index.html', {
+          'img3x' : '/static/images/section-4/740-3x.png',
+          'img2x' : '/static/images/section-4/740-2x.png',
+          'img1x' : '/static/images/section-4/740-1x.png',
+          'title' : 'PocketBook 740',
+          'content-1' : 'Дисплей 7.8" E Ink®Carta™ 1872×1404',
+          'content-2' : '1024 МБ',
+          'content-3' : 'Подсветка, с регулировкой цветовой температуры',
+          'content-4' : 'Емкостный мультисенсорный экран',
+          'content-5' : ' ',
+          'content-6' : ' ',
+          'price' : '17 999 ₽',
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('slide-second/index.html', {
+          'img3x' : '/static/images/section-4/aqua3x.png',
+          'img2x' : '/static/images/section-4/aqua2x.png',
+          'img1x' : '/static/images/section-4/aqua1x.png',
+          'title' : 'PocketBook 632 Aqua',
+          'content-1' : 'Дисплей 7.8" E Ink®Carta™ 1872×1404',
+          'content-2' : '1024 МБ',
+          'content-3' : 'Подсветка, с регулировкой цветовой температуры',
+          'content-4' : 'Емкостный мультисенсорный экран',
+          'content-5' : 'Li-Ion Polymer, 3,7 В, 1900 мАч, до 15000 страниц без',
+          'content-6' : 'Процессор 1 ГГц х 2 (двухъядерный)',
+          'price' : '14 999 ₽',
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('slide-second/index.html', {
+          'img3x' : '/static/images/section-4/632-3x.png',
+          'img2x' : '/static/images/section-4/632-2x.png',
+          'img1x' : '/static/images/section-4/632-1x.png',
+          'title' : 'PocketBook 632',
+          'content-1' : 'Дисплей 7.8" E Ink®Carta™ 1872×1404',
+          'content-2' : '1024 МБ',
+          'content-3' : 'Подсветка, с регулировкой цветовой температуры',
+          'content-4' : 'Емкостный мультисенсорный экран',
+          'content-5' : 'Li-Ion Polymer, 3,7 В, 1900 мАч, до 15000 страниц без',
+          'content-6' : 'Процессор 1 ГГц х 2 (двухъядерный)',
+          'price' : '13 999 ₽',
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('slide-second/index.html', {
+          'img3x' : '/static/images/section-3/3x.png',
+          'img2x' : '/static/images/section-3/2x.png',
+          'img1x' : '/static/images/section-3/1x.png',
+          'title' : 'PocketBook X',
+          'content-1' : '10.3" E Ink®Carta™ Mobius 1872×1404',
+          'content-2' : '1024 МБ',
+          'content-3' : 'Подсветка, с регулировкой цветовой температуры',
+          'content-4' : 'Емкостный мультисенсорный экран',
+          'content-5' : 'Li-Ion Polymer, 3,7 В, 2000 мАч, до 15000 страниц',
+          'content-6' : 'Процессор 1 ГГц х 2 (двухъядерный)',
+          'price' : '29 999 ₽',
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('slide-second/index.html', {
+          'img3x' : '/static/images/section-3/3x.png',
+          'img2x' : '/static/images/section-3/2x.png',
+          'img1x' : '/static/images/section-3/1x.png',
+          'title' : 'PocketBook X',
+          'content-1' : '10.3" E Ink®Carta™ Mobius 1872×1404',
+          'content-2' : '1024 МБ',
+          'content-3' : 'Подсветка, с регулировкой цветовой температуры',
+          'content-4' : 'Емкостный мультисенсорный экран',
+          'content-5' : 'Li-Ion Polymer, 3,7 В, 2000 мАч, до 15000 страниц',
+          'content-6' : 'Процессор 1 ГГц х 2 (двухъядерный)',
+          'price' : '29 999 ₽',
+          })
+        </div>
+        <div class="swiper-slide">
+          @@include('slide-second/index.html', {
+          'img3x' : '/static/images/section-3/3x.png',
+          'img2x' : '/static/images/section-3/2x.png',
+          'img1x' : '/static/images/section-3/1x.png',
+          'title' : 'PocketBook X',
+          'content-1' : '10.3" E Ink®Carta™ Mobius 1872×1404',
+          'content-2' : '1024 МБ',
+          'content-3' : 'Подсветка, с регулировкой цветовой температуры',
+          'content-4' : 'Емкостный мультисенсорный экран',
+          'content-5' : 'Li-Ion Polymer, 3,7 В, 2000 мАч, до 15000 страниц',
+          'content-6' : 'Процессор 1 ГГц х 2 (двухъядерный)',
+          'price' : '29 999 ₽',
+          })
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bottom container">
+    <div class="bottom__container">
+      <p class="bottom__txt">В линейке PocketBook – более дюжины ридеров. Есть недорогие кнопочные модели для детей и
+        людей солидного возраста. Есть ультрасовременные устройства с цветными экранами E Ink Kaleido. Есть компактные,
+        есть среднеразмерные, а есть и огромная 10,3-дюймовая модель. Есть устройства с защитой от воды. Имеются модели
+        с
+        функцией воспроизведения аудио… В общем, есть из чего выбрать! И мы уверены, что каждый сможет без труда
+        подобрать
+        покетбук под свои нужды.</p>
+      <picture class="bottom__img">
+        <source srcset="/static/images/bitmap/bitmap@3x.png 3x">
+        <source srcset="/static/images/bitmap/bitmap@2x.png 2x">
+        <img src="/static/images/bitmap/bitmap.png" alt="photo">
+      </picture>
+      <div class="bottom__wrapper">
+        <h2 class="bottom__title">Характеристики</h2>
+        <ul class="bottom__list">
+          <li><span class="bottom__item-1">Дисплей</span><span class="bottom__item-2">7.8" E Ink®Kaleido™ 1872×1404 (E
+              Ink®Kaleido™ Plus)</span></li>
+          <li><span class="bottom__item-1">Оперативная память</span><span class="bottom__item-2">1024 МБ</span></li>
+          <li><span class="bottom__item-1">Подсветка</span><span class="bottom__item-2">Да</span></li>
+          <li><span class="bottom__item-1">Сенсорный экран</span><span class="bottom__item-2">Емкостный
+              мультисенсорный</span></li>
+          <li><span class="bottom__item-1">Габариты</span><span class="bottom__item-2">195×136,5×8 мм</span></li>
+          <li><span class="bottom__item-1">Влагозащита</span><span class="bottom__item-2">Нет</span></li>
+          <li><span class="bottom__item-1">Материал экрана</span><span class="bottom__item-2">Стекло</span></li>
+          <li><span class="bottom__item-1">Количество градаций серого</span><span class="bottom__item-2">Стекло</span>
+          </li>
+          <li><span class="bottom__item-1">Цвет</span><span class="bottom__item-2">Серебристый</span></li>
+          <li><span class="bottom__item-1">Батарея</span><span class="bottom__item-2">Li-Ion, 3,7 В, 2900 мАч, до 25000
+              страниц без подсветки</span></li>
+          <li><span class="bottom__item-1">Процессор</span><span class="bottom__item-2">1 ГГц х 2 (двухъядерный)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  </main>
+  @@include('footer/index.html')
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
